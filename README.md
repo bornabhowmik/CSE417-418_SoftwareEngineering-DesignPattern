@@ -1,2 +1,4 @@
-# CSE417-418_SoftwareEngineering-DesignPattern
-Software Engineering &amp; Design Pattern Course Repository
+# CSE417 - Software Engineering & Design Pattern
+# CSE418 - Software Engineering & Design Pattern Lab
+
+Software Engineering & Design Pattern Course Repository
