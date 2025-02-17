@@ -1,21 +1,21 @@
-public class main {
-    public static void main(String args[]){
-        order order1 = new order();
 
-        order1.setProcessor("i3")
+
+public class Main {
+    public static void main(String[] args) {
+        Order order1 = new Order.Builder()
+                .setProcessor("i3")
                 .setStorage("8/256")
-                .setGraphics_card("NVIDA");
-        
-        order order2 = new order();
+                .setGraphicsCard("NVIDIA")
+                .build();
 
-        order2.setProcessor("AMD Ryzan")
+        System.out.println("Order 1 Info:\n" + order1);
+
+        Order order2 = new Order.Builder()
+                .setProcessor("AMD Ryzen")
                 .setStorage("16/512")
-                .setGraphics_card("AMD");
-    
+                .setGraphicsCard("AMD")
+                .build();
 
-        System.out.println("Order 1 Info:\n" + order1.toString());
-        System.out.println("Order 2 Info:\n" + order2.toString());
+        System.out.println("Order 2 Info:\n" + order2);
     }
-
-    
 }

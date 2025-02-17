@@ -1,25 +1,42 @@
-public class order {
-    private String Processor;
-    private String Storage;
-    private String Graphics_card;
-    
-    // order(string Processor, string Storage, string Graphics_card)
+final class order {
+    private final String processor;
+    private final String storage;
+    private final String graphicsCard;
 
-    public order setProcessor(String Processor){
-        this.Processor = Processor;
-        return this;
-    }
-    public order setStorage(String Storage){
-        this.Storage = Storage;
-        return this;
-    }
-    public order setGraphics_card(String Graphics_card){
-        this.Graphics_card = Graphics_card;
-        return this;
+    private order(Builder builder) {
+        this.processor = builder.processor;
+        this.storage = builder.storage;
+        this.graphicsCard = builder.graphicsCard;
     }
 
-    public String toString(){
-        return "Processor = "+this.Processor + "\nStorage = "+this.Storage + "\nGraphics_card = "+this.Graphics_card + "\n";
+    public static class Builder {
+        private String processor;
+        private String storage;
+        private String graphicsCard;
+
+        public Builder setProcessor(String processor) {
+            this.processor = processor;
+            return this;
+        }
+
+        public Builder setStorage(String storage) {
+            this.storage = storage;
+            return this;
+        }
+
+        public Builder setGraphicsCard(String graphicsCard) {
+            this.graphicsCard = graphicsCard;
+            return this;
+        }
+
+        public order build() {
+            return new order(this);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Processor = " + this.processor + "\nStorage = " + this.storage + "\nGraphics Card = " + this.graphicsCard + "\n";
     }
 }
     
