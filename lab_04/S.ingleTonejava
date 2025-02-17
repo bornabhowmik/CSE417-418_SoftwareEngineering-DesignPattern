@@ -1,0 +1,20 @@
+package lab_04;
+
+public class SingleTone {
+    private static SingleTone instance(){
+        count ++;
+        System.out.print("Count: " + count);
+    }
+}
+
+public class SyncExample{
+    public static void main(String args[]){
+        Counter counter = new Counter();
+
+        Thread t1 = new(() -> counter.increment())
+        Thread t2 = new(() -> counter.increment())
+
+        t1.start();
+        t2.start();
+    }
+}
