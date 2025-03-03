@@ -106,9 +106,9 @@ public class Main {
         System.out.println("\n");
 
         // Task 3 & 4: Inheritance and Polymorphism - Creating Staff Instances
-        Staff ranger = new Ranger("Nahid Islam", 201, "555-123-4567");
-        Staff vet = new Vet("Asif Mahmud", 202, "555-789-6543");
-        Staff volunteer = new Volunteer("Hasnar Abdullah", 203, "555-333-2222");
+        Staff ranger = new Ranger("Borna", 201, "555-123-4567");
+        Staff vet = new Vet("Orpa", 202, "555-789-6543");
+        Staff volunteer = new Volunteer("Nusrat", 203, "555-333-2222");
 
         ranger.displayInfo();
         System.out.println("\n");
