@@ -10,9 +10,9 @@ class RadioNetworkManager {
     }
 
     public static RadioNetworkManager getInstance() {
-        if (instance == null) {
-            synchronized (RadioNetworkManager.class) {
-                if (instance == null) {
+        if(instance == null) {
+            synchronized(RadioNetworkManager.class) {
+                if(instance == null) {
                     instance = new RadioNetworkManager();
                 }
             }
